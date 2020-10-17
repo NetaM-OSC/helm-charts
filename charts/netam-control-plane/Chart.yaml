@@ -1,8 +1,25 @@
 apiVersion: v2
+
 name: netam-control-plane
+home: https://github.com/NetaM-OSC/NetAM
+icon: https://www.elastic.co/assets/blt47799dcdcf08438d/logo-elastic-beats-lt.svg
 description: A Helm chart for Kubernetes
 
 type: application
-version: 0.1.0
+version: 0.2.0
 
 appVersion: 1.16.0
+
+dependencies:
+  - name: "postgresql"
+    version: "9.8.4"
+    repository: "https://charts.bitnami.com/bitnami"
+    condition: postgresql.enabled
+  - name: "redis"
+    version: "10.5.7"
+    repository: "https://charts.bitnami.com/bitnami"
+    condition: redis.enabled
+
+maintainers:
+  - name: sdeu
+    email: contact@sdeu.fr
