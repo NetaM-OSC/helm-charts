@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  netam-control-plane:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2020-10-17T22:57:23.393809744Z"
+    description: A Helm chart for Kubernetes
+    digest: 4ad944848bdebc9597eabfeb2f957ed0a2f2e1ead35f0f14cf37b56f8a428110
+    name: netam-control-plane
+    type: application
+    urls:
+    - https://github.com/NetaM-OSC/helm-charts/releases/download/netam-control-plane-0.1.0/netam-control-plane-0.1.0.tgz
+    version: 0.1.0
+generated: "2020-10-17T22:57:23.285987236Z"
