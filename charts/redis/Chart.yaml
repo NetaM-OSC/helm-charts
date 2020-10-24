@@ -1,0 +1,18 @@
+apiVersion: v2
+name: redis
+version: 0.1.0
+description: Redis is an open source key-value store that functions as a data structure server.
+
+home: http://redis.io/
+keywords:
+  - redis
+  - keyvalue
+  - database
+sources:
+  - https://github.com/NetaM-OSC/helm-charts
+maintainers:
+  - name: sebastiendeu
+  - name: vfricou
+
+type: application
+appVersion: 6.0.8
