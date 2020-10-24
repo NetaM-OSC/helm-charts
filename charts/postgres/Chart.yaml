@@ -1,0 +1,17 @@
+apiVersion: v2
+name: postgres
+version: 0.1.0
+description: The PostgreSQL object-relational database system provides reliability and data integrity.
+
+home: https://www.postgresql.org/
+keywords:
+  - postgres
+  - database
+sources:
+  - https://github.com/NetaM-OSC/helm-charts
+maintainers:
+  - name: sebastiendeu
+  - name: vfricou
+
+type: application
+appVersion: 12.0
