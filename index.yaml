@@ -11,4 +11,26 @@ entries:
     urls:
     - https://github.com/NetaM-OSC/helm-charts/releases/download/netam-control-plane-0.1.0/netam-control-plane-0.1.0.tgz
     version: 0.1.0
+  redis:
+  - apiVersion: v2
+    appVersion: 6.0.8
+    created: "2020-10-26T09:04:50.049240553Z"
+    description: Redis is an open source key-value store that functions as a data
+      structure server.
+    digest: cecdb2f0c66febe5b83c74d4a5cd6af2b7e5bc541496d2a04dcc3f04ffa97f1b
+    home: http://redis.io/
+    keywords:
+    - redis
+    - keyvalue
+    - database
+    maintainers:
+    - name: sebastiendeu
+    - name: vfricou
+    name: redis
+    sources:
+    - https://github.com/NetaM-OSC/helm-charts
+    type: application
+    urls:
+    - https://github.com/NetaM-OSC/helm-charts/releases/download/redis-0.1.0/redis-0.1.0.tgz
+    version: 0.1.0
 generated: "2020-10-17T22:57:23.285987236Z"
