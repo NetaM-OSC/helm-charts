@@ -11,6 +11,27 @@ entries:
     urls:
     - https://github.com/NetaM-OSC/helm-charts/releases/download/netam-control-plane-0.1.0/netam-control-plane-0.1.0.tgz
     version: 0.1.0
+  postgres:
+  - apiVersion: v2
+    appVersion: "12"
+    created: "2020-10-26T09:05:40.080467558Z"
+    description: The PostgreSQL object-relational database system provides reliability
+      and data integrity.
+    digest: 0c9a25aa2c07da3086477771b59de7baebc82eb267811e7a0a1a7b94143f4ecf
+    home: https://www.postgresql.org/
+    keywords:
+    - postgres
+    - database
+    maintainers:
+    - name: sebastiendeu
+    - name: vfricou
+    name: postgres
+    sources:
+    - https://github.com/NetaM-OSC/helm-charts
+    type: application
+    urls:
+    - https://github.com/NetaM-OSC/helm-charts/releases/download/postgres-0.1.0/postgres-0.1.0.tgz
+    version: 0.1.0
   redis:
   - apiVersion: v2
     appVersion: 6.0.8
