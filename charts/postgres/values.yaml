@@ -1,0 +1,56 @@
+image:
+  repository: postgres
+  pullPolicy: IfNotPresent
+
+imagePullSecrets: []
+nameOverride: ""
+fullnameOverride: ""
+
+serviceAccount:
+  create: true
+  annotations: {}
+  name: ""
+
+podAnnotations: {}
+
+podSecurityContext:
+  runAsUser: 999
+  runAsGroup: 999
+
+securityContext:
+  capabilities:
+    drop:
+    - ALL
+  readOnlyRootFilesystem: false
+  runAsNonRoot: true
+  runAsUser: 999
+  runAsGroup: 999
+
+service:
+  type: ClusterIP
+  port: 5432
+
+resources:
+  limits:
+    cpu: 500m
+    memory: 512Mi
+  requests:
+    cpu: 500m
+    memory: 512Mi
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}
+
+volumes:
+  storageClassName: "standard"
+  capacity: 10Gi
+
+password:
+  useExistingSecret: false
+
+database:
+  username: "netam"
+  databaseName: "netam"
