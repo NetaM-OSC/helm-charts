@@ -2,14 +2,14 @@
 apiVersion: autoscaling/v2beta1
 kind: HorizontalPodAutoscaler
 metadata:
-  name: {{ include "netam-control-plane.fullname" . }}
+  name: {{ include "control-plane.fullname" . }}
   labels:
-    {{- include "netam-control-plane.labels" . | nindent 4 }}
+    {{- include "control-plane.labels" . | nindent 4 }}
 spec:
   scaleTargetRef:
     apiVersion: apps/v1
     kind: Deployment
-    name: {{ include "netam-control-plane.fullname" . }}
+    name: {{ include "control-plane.fullname" . }}
   minReplicas: {{ .Values.autoscaling.minReplicas }}
   maxReplicas: {{ .Values.autoscaling.maxReplicas }}
   metrics:

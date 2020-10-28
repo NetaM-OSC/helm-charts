@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "control-plane.fullname" . }}
+  labels:
+  {{- include "control-plane.labels" . | nindent 4 }}
+data:
+  SENTRY_DSN: ''
+  REDIS_HOST: {{ .Release.Name }}-redis
+  DB_HOST: {{ .Release.Name }}-postgres
