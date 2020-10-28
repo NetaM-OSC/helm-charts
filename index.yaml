@@ -1,5 +1,29 @@
 apiVersion: v1
 entries:
+  control-plane:
+  - apiVersion: v2
+    appVersion: 1.3.1
+    created: "2020-10-28T20:56:56.78439359Z"
+    dependencies:
+    - name: postgres
+      repository: https://charts.netam.site/
+      version: 0.1.0
+    - name: redis
+      repository: https://charts.netam.site/
+      version: 0.1.0
+    description: NetAM a.k.a Network Address Manager
+    digest: 6c6cf2600e9e05d9839f6b19d651bb22faf48bde20c16a120527a129544191bd
+    home: http://netam.site/
+    maintainers:
+    - name: sebastiendeu
+    - name: vfricou
+    name: control-plane
+    sources:
+    - https://github.com/NetaM-OSC/helm-charts
+    type: application
+    urls:
+    - https://github.com/NetaM-OSC/helm-charts/releases/download/control-plane-0.1.0/control-plane-0.1.0.tgz
+    version: 0.1.0
   netam-control-plane:
   - apiVersion: v2
     appVersion: 1.16.0
